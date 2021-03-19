@@ -40,8 +40,14 @@ public class Calculator {
         return result;
     }
 
-    private void addToHistory(String newEntry){
+    protected void addToHistory(String newEntry){
         this.history = Arrays.copyOf(this.history, this.history.length+1);
         this.history[this.history.length-1] = newEntry;
+    }
+
+    public void printHistory(){
+        for (int i=0; i<this.history.length; i++){
+            System.out.println(this.history[i]);
+        }
     }
 }
