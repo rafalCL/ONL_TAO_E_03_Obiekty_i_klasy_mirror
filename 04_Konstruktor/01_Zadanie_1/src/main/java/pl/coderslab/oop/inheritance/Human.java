@@ -1,0 +1,20 @@
+package pl.coderslab.oop.inheritance;
+
+public class Human {
+    protected String name;
+
+    public Human() {
+    }
+
+    public Human(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name.toUpperCase();
+    }
+}
